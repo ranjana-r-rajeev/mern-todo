@@ -57,4 +57,13 @@ app.put('/todo/update/:id', async (req, res) => {
 	res.json(todo);
 });
 
-app.listen(3001);
+// app.listen(4000);
+
+// app.listen(4000, () => {
+//     console.log('Server is listening on port 4000');
+// });
+
+const port = 5000; // change to a different port number
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
